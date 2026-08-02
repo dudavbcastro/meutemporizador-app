@@ -36,6 +36,12 @@ h1 {
     text-align: center;
 }
 
+.campo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 #minutos-input,
 #segundos-input {
     width: 60px;
@@ -75,6 +81,10 @@ button:active {
 
 /* Ajustes específicos para telas pequenas (celulares) */
 @media (max-width: 480px) {
+    .config {
+        flex-direction: column;
+    }
+
     .botoes {
         flex-direction: column;
         max-width: 250px;
