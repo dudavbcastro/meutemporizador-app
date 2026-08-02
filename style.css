@@ -2,29 +2,58 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
     font-family: arial, sans-serif;
     background-color: #2f0133;
     color: white;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#timer {
+    font-size: clamp(3rem, 15vw, 5rem);
     font-weight: bold;
     margin: 20px 0;
 }
 
-#timer {
-    font-size: 5rem;
-    font-weight: bold;
-    margin: 20px 0;
+.config {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+#minutos-input,
+#segundos-input {
+    width: 60px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .botoes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
     margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
 button {
@@ -36,8 +65,22 @@ button {
     background-color: #a33ce7;
     color: white;
     cursor: pointer;
+    flex: 1 1 auto;
+    min-width: 90px;
 }
 
 button:active {
     background-color: #c0392b;
+}
+
+/* Ajustes específicos para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    .botoes {
+        flex-direction: column;
+        max-width: 250px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
