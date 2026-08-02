@@ -1,4 +1,4 @@
-const CACHE_NOME = "pomodoro-cache-v1";
+const CACHE_NOME = "pomodoro-cache-v2";
 const ARQUIVOS_PARA_CACHE = [
     "./",
     "./index.html",
