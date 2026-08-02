@@ -2,7 +2,7 @@
     "name": "Meu Temporizador",
     "short_name": "Temporizador",
     "description": "Temporizador de estudos com tempo configurável",
-    "start_url": "./index.html",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#a33ce7",

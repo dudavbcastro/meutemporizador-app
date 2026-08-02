@@ -1,9 +1,12 @@
-const CACHE_NOME = "pomodoro-cache-v3";
+const CACHE_NOME = "pomodoro-cache-v4";
 const ARQUIVOS_PARA_CACHE = [
     "./",
     "./index.html",
     "./style.css",
     "./script.js",
+    "./manifest.json",
+    "./icon-192.png",
+    "./icon-512.png",
     "./alarme.mp3"
 ];
 
